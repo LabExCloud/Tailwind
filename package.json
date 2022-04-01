@@ -1,0 +1,23 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "V2",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build -i ./src/input.css -o ./public/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LabExCloud/Tailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LabExCloud/Tailwind/issues"
+  },
+  "homepage": "https://github.com/LabExCloud/Tailwind#readme",
+  "dependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
