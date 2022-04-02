@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <!-- <link href='https://fonts.googleapis.com/css?family=Sniglet' rel='stylesheet'> -->
     <title> Lab Works </title>
 </head>
 <body>
@@ -17,14 +15,9 @@
         <div class="flex flex-col w-72 h-screen px-4 py-5 overflow-y-auto border-r border-borderclr sidepage">
             
             <div class="flex flex-col justify-center items-center">
-                <!-- <div class="shrink-0"> -->
-                  <img src="https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg" class="rounded-full w-28 border-2 border-white" alt="Avatar">
-                  <h2 class="text-xl font-rev text-center text-borderclr py-2"> Isabella Ava </h2>
-                  <p class="text-gray-300"> S7 - 51 </p>
-                <!-- </div> -->
-                <!-- <div class="grow ml-3">
-                  <p class="text-sm text-blue-600"> Isabella Ava </p>
-                </div> -->
+                <img src="https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg" class="rounded-full w-28 border-2 border-white" alt="Avatar">
+                <h2 class="text-xl font-rev text-center text-borderclr py-2"> Isabella Ava </h2>
+                <p class="text-gray-300"> S7 - 51 </p>
             </div>
 
             <div class="flex flex-col justify-between mt-6 text-gray-300">
@@ -83,7 +76,6 @@
                     <span class="mx-4"> Logout </span>
                     </a>
                 </li>
-
                 </ul>
 
             </aside>
@@ -93,24 +85,34 @@
       <!-- sidebar ends -->
 
       <!-- Main screen starts -->
-      <div class="w-full h-screen overflow-y-auto">
-          <div class="flex justify-center text-xl text-white py-7 border-b border-borderclr">
-              <p> Your Lab works </p>
-          </div>
-        <!-- <div class="flex items-center justify-center p-40 border-4 border-dotted">
-          Content...
-        </div> -->
-        <div class="grid grid-cols-2 gap-10 py-14 px-8 text-white">
-            <div class="h-36 border border-borderclr rounded-2xl bg-cardclr">item 1</div>
-            <div class="h-36 border border-borderclr rounded-2xl bg-cardclr">item 2</div>
-            <div class="h-36 border border-borderclr rounded-2xl bg-cardclr">item 3</div>
-            <div class="h-36 border border-borderclr rounded-2xl bg-cardclr">item 4</div>
-        </div>
+        <div class="w-full h-screen overflow-y-auto">
+            <div class="flex justify-center text-xl text-white py-7 border-b border-borderclr">
+                <p> Your Lab works </p>
+            </div>
+            <div class="flex justify-center py-5 w-full relative items-center">
+                <input class="text-center py-2 w-72 bg-gray-700 border border-black rounded-xl" type="search" id="search" placeholder="Search Labs"/>
+                <div class="absolute right-28 w-32 flex">
+                    <label class="text-white"for="sort">sort: </label>
+                    <select class="text-center text-sm text-gray-400 bg-gray-700 border border-black rounded" id="sort" name="sort">
+                        <option value="recent">Recent</option>
+                        <option value="star">Starred</option>
+                        <option value="date">Date</option>
+                        <option value="alph">Alphabet</option>
+                    </select>
+                </div>   
+            </div>
+        
+            <div class="grid grid-cols-2 gap-10 py-14 px-8 text-white">
+                <div class="h-36 border border-borderclr rounded-2xl bg-cardclr">item 1</div>
+                <div class="h-36 border border-borderclr rounded-2xl bg-cardclr">item 2</div>
+                <div class="h-36 border border-borderclr rounded-2xl bg-cardclr">item 3</div>
+                <div class="h-36 border border-borderclr rounded-2xl bg-cardclr">item 4</div>
+            </div>
       </div>
       <!-- Main screen ends -->
 
     </div>
     <!-- Full container ends -->
 
-  </body>
+</body>
 </html>

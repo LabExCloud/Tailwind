@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <!-- <link href='https://fonts.googleapis.com/css?family=Sniglet' rel='stylesheet'> -->
     <title> Lab Works </title>
 </head>
 <body>
@@ -17,14 +15,9 @@
         <div class="flex flex-col w-72 h-screen px-4 py-5 overflow-y-auto border-r border-borderclr sidepage">
             
             <div class="flex flex-col justify-center items-center">
-                <!-- <div class="shrink-0"> -->
-                  <img src="https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg" class="rounded-full w-28 border-2 border-white" alt="Avatar">
-                  <h2 class="text-xl font-rev text-center text-borderclr py-2"> Isabella Ava </h2>
-                  <p class="text-gray-300"> S7 - 51 </p>
-                <!-- </div> -->
-                <!-- <div class="grow ml-3">
-                  <p class="text-sm text-blue-600"> Isabella Ava </p>
-                </div> -->
+                <img src="https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg" class="rounded-full w-28 border-2 border-white" alt="Avatar">
+                <h2 class="text-xl font-rev text-center text-borderclr py-2"> Isabella Ava </h2>
+                <p class="text-gray-300"> S7 - 51 </p>
             </div>
 
             <div class="flex flex-col justify-between mt-6 text-gray-300">
@@ -35,7 +28,6 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
-
                     <span class="mx-4"> Lab </span>
                     </a>
                 </li>
@@ -94,23 +86,32 @@
 
       <!-- Main screen starts -->
       <div class="w-full h-screen overflow-y-auto">
-          <div class="flex justify-center text-xl text-white py-7 border-b border-borderclr">
-              <p> Your Exams </p>
-          </div>
-        <!-- <div class="flex items-center justify-center p-40 border-4 border-dotted">
-          Content...
-        </div> -->
-        <div class="grid grid-cols-2 gap-10 py-14 px-8 text-white">
-            <div class="h-36 border border-borderclr rounded-2xl bg-cardclr">item 1</div>
-            <div class="h-36 border border-borderclr rounded-2xl bg-cardclr">item 2</div>
-            <div class="h-36 border border-borderclr rounded-2xl bg-cardclr">item 3</div>
-            <div class="h-36 border border-borderclr rounded-2xl bg-cardclr">item 4</div>
-        </div>
+            <div class="flex justify-center text-xl text-white py-7 border-b border-borderclr">
+                <p> Your Exams </p>
+            </div>
+            <div class="flex justify-center py-5 w-full relative items-center">
+                <input class="text-center py-2 w-72 bg-gray-700 border border-black rounded-xl" type="search" id="search" placeholder="Search Exams"/>
+                <div class="absolute right-28 w-32 flex">
+                    <label class="text-white"for="sort">sort: </label>
+                    <select class="text-center text-sm text-gray-400 bg-gray-700 border border-black rounded" id="sort" name="sort">
+                        <option value="recent">Recent</option>
+                        <option value="star">Starred</option>
+                        <option value="date">Date</option>
+                        <option value="alph">Alphabet</option>
+                    </select>
+                </div>   
+            </div>
+            <div class="grid grid-cols-2 gap-10 py-14 px-8 text-white">
+                <div class="h-36 border border-borderclr rounded-2xl bg-cardclr">item 1</div>
+                <div class="h-36 border border-borderclr rounded-2xl bg-cardclr">item 2</div>
+                <div class="h-36 border border-borderclr rounded-2xl bg-cardclr">item 3</div>
+                <div class="h-36 border border-borderclr rounded-2xl bg-cardclr">item 4</div>
+            </div>
       </div>
       <!-- Main screen ends -->
 
     </div>
     <!-- Full container ends -->
 
-  </body>
+</body>
 </html>
